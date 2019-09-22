@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header>
+    <h1><a href="index.html"><span style="color: red;">Torez.com</span></a></h1>
+    <img src="photo/9.jpg" alt="Not found" height="150" width="150"/>
+</header>
+<nav>
+    <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="history.html">История </a></li>
+        <li><a href="infrastruct.html">Инфраструктура </a></li>
+        <li><a href="culture.html">Искуcство и культура</a></li>
+        <li><a href="FAQ.html">Обратная связь</a></li>
+    </ul>
+</nav>
+
+<body>
+<section class="backfire-form-section">
+    <fieldset>
+        <legend><h2>Обратная связь</h2></legend>
+        <form action="">
+            <label for="name">Ваше имя:<br></label>
+            <input type="text" required id="name" name="Name" size="40" maxlength="20"><br><br>
+            <label for="email">Ваша почта:<br></label>
+            <input type="email" required id="email" name="email" size="40"><br><br>
+            <label for="brws">Ваш браузер:<br></label>
+            <input list="brws" required id="brw" name="browser">
+            <datalist id="brws">
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Opera"></option>
+                <option value="Yandex"></option>
+                <option value="Internet Explorer"></option>
+            </datalist><br><br>
+            <label for="text">Текст:<br></label>
+            <textarea name="name" id="text" rows="8" cols="80"></textarea><br>
+            <br>
+            <input type="submit" value="Отправить">
+            <input type="button" disabled disabledname="error" value="Сообщить об ошибке">
+        </form>
+    </fieldset>
+</section>
+<div class="footer"><footer>
+    <center> <p>
+        <small>Все права защищены ну это не точно</small>
+        <address >
+            Почты нет и не будет <s>@gmail.com</s>
+        </address>
+        </p></center>
+</footer>
+</div>
+</body>
+</html>

@@ -6,6 +6,14 @@
     color: #fff; /* Цвет текста */;
     width: 1000px;
 }
+.lefting{
+    float: left;
+    padding-right: 20px ;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom:5px ;
+    margin: 0;
+}
 .title-table{
     font-weight: bold;
     font-stretch: normal;
@@ -13,6 +21,48 @@
     font-size: 40px;
 }
 .tablehistory{
+    background: #0078c9; /* Цвет фона */
+    padding: 0.5px; /* Поля вокруг текста */
+    opacity: 0.7; /* Полупрозрачный фон */
+    filter: alpha(Opacity=70); /* Прозрачность в IE */
+    color: #fff; /* Цвет текста */;
+    width: 1000px;
+}
+.section-table{
+    background: #0078c9; /* Цвет фона */
+    padding: 0.5px; /* Поля вокруг текста */
+    opacity: 0.7; /* Полупрозрачный фон */
+    filter: alpha(Opacity=70); /* Прозрачность в IE */
+    color: #fff; /* Цвет текста */;
+    width: 1000px;
+}
+.mobileTable {overflow:auto;width:100%}
+.cwdtable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #ebab3a;border-collapse: collapse;}
+.cwdtable th {font-size:12px;background-color:#e6983b;border-width: 1px;padding: 8px;border-style: solid;border-color: #ebab3a;}
+.cwdtable tr {background-color:#f0c169;}
+.cwdtable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #ebab3a;}
+.cwdtable th,.cwdtable td{text-align:center}
+
+.tborder{
+    font:bold 13px tahoma;text-align:center;vertical-align:middle;width:5%;
+    font:bold 13px tahoma;text-align:center;vertical-align:middle;width:35%;
+    font:bold 13px tahoma;text-align:center;vertical-align:middle;width:60%;
+    text-align:center;vertical-align:middle;font-weight:normal;width:60%;
+    background: blue; /* Цвет фона */
+    padding: 0.5px; /* Поля вокруг текста */
+    opacity: 0.7; /* Полупрозрачный фон */
+    filter: alpha(Opacity=70); /* Прозрачность в IE */
+    color: white; /* Цвет текста */
+    width: 1000px;
+}
+.carta{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0;
+    padding: 0;
+}
+.footer{
     background: #0078c9; /* Цвет фона */
     padding: 0.5px; /* Поля вокруг текста */
     opacity: 0.7; /* Полупрозрачный фон */
@@ -41,22 +91,35 @@ body
     background-attachment: fixed;
 
 }
-.menu-main {
+.park{
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin: auto;
+}
+.first-news-header{
+    text-align: center;
+    background-image:url("https://www.seoclerk.com/pics/want10687-14TZRq1388844023.jpg") ;
+    padding: 5px;
+    margin:0;
+    color: #ebab3a;
+}
+.menu {
     list-style: none;
     margin: 0 0 5px;
     padding: 25px 0 5px;
     text-align: center;
     background: white;
 }
-.menu-main li {display: inline-block;}
-.menu-main li:after {
+.menu li {display: inline-block;}
+.menu li:after {
     content: "|";
     color: #606060;
     display: inline-block;
     vertical-align:top;
 }
-.menu-main li:last-child:after {content: none;}
-.menu-main a {
+.menu li:last-child:after {content: none;}
+.menu a {
     text-decoration: none;
     font-family: 'Ubuntu Condensed', sans-serif;
     letter-spacing: 2px;
@@ -68,10 +131,10 @@ body
     display: inline-block;
     transition: color .2s;
 }
-.menu-main a, .menu-main a:visited {color: #9d999d;}
-.menu-main a.current, .menu-main a:hover{color: #feb386;}
-.menu-main a:before,
-.menu-main a:after {
+.menu a, .menu a:visited {color: #9d999d;}
+.menu a.current, .menu a:hover{color: #feb386;}
+.menu a:before,
+.menu a:after {
     content: "";
     position: absolute;
     height: 4px;
@@ -82,13 +145,13 @@ body
     background: #feb386;
     transition: .8s;
 }
-.menu-main a:hover:before, .menu-main .current:before {left: 0;}
-.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+.menu a:hover:before, .menu .current:before {left: 0;}
+.menu a:hover:after, .menu .current:after {right: 0;}
 @media (max-width: 550px) {
-    .menu-main {padding-top: 0;}
-    .menu-main li {display: block;}
-    .menu-main li:after {content: none;}
-    .menu-main a {
+    .menu {padding-top: 0;}
+    .menu li {display: block;}
+    .menu li:after {content: none;}
+    .menu a {
         padding: 25px 0 20px;
         margin: 0 30px;
     }
